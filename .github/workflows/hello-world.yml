@@ -9,8 +9,8 @@ jobs:
       - name: Hello world
         id: beef
         run:
-          echo "{clock}={noodle}" >> $GITHUB_OUTPUT
+          echo "{clock}={noodle}" >> $env:GITHUB_OUTPUT;
       - name: marco
         run:
-          echo "${{steps.beef.clock}}"
+          echo "${{steps.beef.clock}}";
   
