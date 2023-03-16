@@ -9,7 +9,7 @@ jobs:
       - name: Hello world
         id: beef
         run:
-          echo "::set-output name=clock::noodle"
+          echo "{clock}={noodle}" >> $GITHUB_OUTPUT
       - name: marco
         run:
           echo "${{steps.beef.clock}}"
