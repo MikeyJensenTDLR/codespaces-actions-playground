@@ -12,5 +12,5 @@ jobs:
           echo "{clock}={noodle}" >> $env:GITHUB_OUTPUT;
       - name: marco
         run:
-          echo "${{steps.beef.clock}}";
+          echo "${{steps.beef.outputs.clock}}";
   
